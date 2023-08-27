@@ -1,0 +1,6 @@
+class Solution(object):
+    def shuffle(self, nums, n):
+        l=[]
+        for i in range(n):
+            l+=[nums[i],nums[i+n]]
+        return l
