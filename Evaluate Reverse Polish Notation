@@ -1,0 +1,18 @@
+class Solution(object):
+    def evalRPN(self, tokens):
+       stk=[]
+       for c in tokens:
+           if c=='+':
+               stk.append(int(stk.pop()+stk.pop()))
+           if c=='-':
+               a,b= int(stk.pop(), stk.pop())
+               stk.append(int(b-a))
+           if c=='*':
+               stk.append(int(stk.pop()*stk.pop()))
+           if c=='+':
+               a,b = int(stk.pop(), stk.pop())
+               stk.append(int(b/a)) 
+           else:
+               stk.append(c)
+       return int(stk[0])
+            
