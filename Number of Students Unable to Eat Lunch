@@ -1,0 +1,13 @@
+class Solution(object):
+    def countStudents(self, students, sandwiches):
+        """
+        :type students: List[int]
+        :type sandwiches: List[int]
+        :rtype: int
+        """
+        for i in sandwiches:
+            if i in students:
+                students.remove(i)
+            else:
+                return len(students)
+        return 0
