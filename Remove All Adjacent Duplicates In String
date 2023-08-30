@@ -1,0 +1,12 @@
+class Solution(object):
+    def removeDuplicates(self, s):
+        stk=[]
+        for i in s:
+            if not stk:
+                stk.append(i)
+            else:
+                if(i==stk[-1]):
+                    stk.pop()
+                else:
+                    stk.append(i)
+        return ''.join(stk)
