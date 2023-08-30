@@ -1,0 +1,14 @@
+class Solution(object):
+    def find132pattern(self, nums):
+        stk = []
+        curMin = nums[0]
+
+        for n in nums[1:]:
+            while stk and stk[-1][0] <= n:
+                stk.pop()
+            if stk and n > stk[-1][1]:
+                return True
+
+            stk.append([n, curMin]) 
+            curMin = min(n, curMin)
+        return False
