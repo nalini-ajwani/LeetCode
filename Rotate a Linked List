@@ -1,0 +1,45 @@
+# Your task is to complete this function
+
+'''
+
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+'''
+
+
+class Solution:
+    
+    #Function to rotate a linked list.
+    def rotate(self, head, k):
+        # code here
+        if not head:
+            return head
+        
+        #length
+        current = head
+        length = 1
+        while current.next:
+            current = current.next
+            length += 1
+            
+        k = k % length
+        
+        if k == 0: 
+            return head
+            
+        current = head
+        for _ in range(k-1):
+            current = current.next
+            
+        kth_node = current.next
+        current.next = None
+        
+        tail = kth_node
+        while tail.next:
+            tail = tail.next
+        tail.next = head
+        
+        return kth_node
