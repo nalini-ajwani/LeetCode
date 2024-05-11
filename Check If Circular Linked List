@@ -1,0 +1,20 @@
+#class Node:
+#    def __init__(self, data):
+#        self.data = data
+#        self.next = None
+
+
+# your task is to complete this function
+# function should return true/false or 1/0
+def isCircular(head):
+    # Code here
+    if head is None:
+        return True
+    vis = set()
+    temp = head
+    while temp is not None:
+        if temp in vis:
+            return True
+        vis.add(temp)
+        temp = temp.next
+    return False
