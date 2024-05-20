@@ -10,32 +10,41 @@ class Node:
         self.bottom=None
         
 '''
-def mergeLists(a,b):
-    dummy = Node(0)
-    tail = dummy
-    while a and b:
-        if a.data < b.data:
-            tail.bottom = a
-            a = a.bottom
-        else:
-            tail.bottom = b
-            b = b.bottom
-        tail = tail.bottom
-            
-    if a:
-        tail.bottom = a
-    elif b:
-        tail.bottom = b
-    return dummy.bottom
+def merge(a, b):
+    if a is None:
+        return b
+    if b is None:
+        return a
 
+    if a.data < b.data:
+        result = a
+        result.bottom = merge(a.bottom, b)
+    else:
+        result = b
+        result.bottom = merge(a, b.bottom)
 
-def flatten(root):
-    #Your code here
-    while root is None or root.next is None:
+    result.next = None
+    return result
+
+class Solution:
+    def flatten(self, root):
+        if not root or not root.next:
+            return root
+
+        # Recursively flatten the next sublist
+        root.next = self.flatten(root.next)
+
+        # Merge this list with the flattened next list
+        root = merge(root, root.next)
+
         return root
-    root.next = flatten(root.next)
-    root = mergeLists(root, root.next)
-    return root
+
+def print_flattened_list(root):
+    while root:
+        print(root.data, end=" ")
+        root = root.bottom
+    print()
+
 
 
 #{ 
@@ -81,7 +90,7 @@ if __name__=="__main__":
             a1=listo[it]
             it+=1
             temp=Node(a1)
-            if flag == 1:
+            if flag is 1:
                 head=temp
                 pre=temp
                 flag=0
@@ -95,14 +104,15 @@ if __name__=="__main__":
                 a=listo[it]
                 it+=1
                 tempB=Node(a)
-                if flag1 == 1:
+                if flag1 is 1:
                     temp.bottom=tempB
                     preB=tempB
                     flag1=0
                 else:
                     preB.bottom=tempB
                     preB=tempB
-        root=flatten(head)
+        obj=Solution()
+        root=obj.flatten(head)
         printList(root)
         
         t-=1
