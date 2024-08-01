@@ -1,0 +1,24 @@
+class Solution:
+    def countDistinct(self, A, N, K):
+        # Code here
+        from collections import defaultdict
+        
+        freq = defaultdict(int)
+        res = []
+        
+        for i in range(K):
+            freq[A[i]] += 1
+            
+        res.append(len(freq))
+        
+        for i in range(K, N):
+            out = A[i - K]
+            freq[out] -= 1
+            if freq[out] == 0:
+                del freq[out]
+                
+            incoming = A[i]
+            freq[incoming] += 1
+            
+            res.append(len(freq))
+        return res
