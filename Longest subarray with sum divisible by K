@@ -1,0 +1,25 @@
+class Solution:
+	def longSubarrWthSumDivByK (self,arr,  n, K) : 
+		#Complete the function
+		remMap = {}
+		maxlen = 0
+		psum = 0
+		
+		for i in range (n):
+		    psum += arr[i]
+		    
+    		rem = psum % K
+    		if rem < 0:
+    		    rem += K
+    		    
+    		if rem == 0:
+    		    maxlen = i + 1
+    		    
+    		if rem in remMap:
+    		    subarr = i - remMap[rem]
+    		    maxlen = max(maxlen, subarr)
+    		else:
+    		    remMap[rem] = i
+		    
+		return maxlen
+		
