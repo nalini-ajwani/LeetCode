@@ -1,27 +1,28 @@
-class Solution:
-    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        rows, cols = len(matrix), len(matrix[0])
-        top, bot = 0, rows-1
-        while top <= bot:
-            row = (top + bot) // 2
-            if target > matrix[row][-1]:
-                top = row + 1
-            elif target < matrix[row][0]:
-                bot = row - 1
-            else:
-                break
-        if not(top<=bot):
-            return False
-        
-        row = (top + bot) // 2
-        l, r = 0, cols - 1
-        while l <= r:
-            m = (l + r) // 2
-            if target > matrix[row][m]:
-                l = m + 1
-            elif target < matrix[row][m]:
-                r = m - 1
-            else:
+class Solution(object):
+    def searchMatrix(self, matrix, target):
+        """
+        :type matrix: List[List[int]]
+        :type target: int
+        :rtype: bool
+        """
+        if not matrix or not matrix[0]:
+            return false
+
+        m,n = len(matrix) , len(matrix[0])
+        left , right = 0 , m*n-1
+
+        while left <= right:
+            mid = (left+right) //2
+            row = mid // n
+            col = mid % n
+            matrix_value = matrix[row][col]
+
+            if matrix_value == target:
                 return True
+            elif matrix_value < target:
+                left = mid+1
+            else:
+                right = mid-1
+
         return False
-                
+        
