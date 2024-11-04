@@ -1,0 +1,31 @@
+class Solution:
+    def books(self, A, B):
+        if B > len(A):  # Not enough books to assign each student at least one
+            return -1
+
+        left, right = max(A), sum(A)
+        result = right  # Initialize result with the upper bound sum(A)
+
+        def canAllocate(maxPages):
+            students = 1
+            currentPages = 0
+            for pages in A:
+                if currentPages + pages > maxPages:
+                    students += 1  # Need a new student
+                    currentPages = pages
+                    if students > B:
+                        return False
+                else:
+                    currentPages += pages
+            return True
+
+        # Perform binary search on the number of pages
+        while left <= right:
+            mid = left + (right - left) // 2
+            if canAllocate(mid):
+                result = mid  # Record feasible max pages
+                right = mid - 1  # Try for a smaller max
+            else:
+                left = mid + 1  # Increase the allowed max pages
+
+        return result
