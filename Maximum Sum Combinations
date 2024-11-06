@@ -1,0 +1,31 @@
+import heapq
+class Solution:
+    # @param A : list of integers
+    # @param B : list of integers
+    # @param C : integer
+    # @return a list of integers
+    def solve(self, A, B, C):
+        A.sort(reverse = True)
+        B.sort(reverse = True)
+        
+        maxheap = []
+        res = []
+        vis = set()
+        
+        heapq.heappush(maxheap, (-(A[0]+B[0]), 0, 0))
+        vis.add((0,0))
+        
+        for _ in range(C):
+            if maxheap:
+                cursum, i, j = heapq.heappop(maxheap)
+                res.append(-cursum)
+                
+                if i+1 < len(A) and (i+1, j) not in vis:
+                    heapq.heappush(maxheap, (-(A[i + 1] + B[j]), i + 1, j))
+                    vis.add((i + 1, j))
+                
+                if j + 1 < len(B) and (i, j + 1) not in visited:
+                    heapq.heappush(maxheap, (-(A[i] + B[j + 1]), i, j + 1))
+                    vis.add((i, j + 1))
+        
+        return res
