@@ -1,0 +1,19 @@
+import heapq
+
+def mergeKSortedArrays(kArrays, k):
+    min_heap = []
+    result = []
+    
+    for i in range(k):
+        if kArrays[i]:  
+            heapq.heappush(min_heap, (kArrays[i][0], i, 0))  
+    
+    while min_heap:
+        val, array_index, element_index = heapq.heappop(min_heap)
+        result.append(val)
+        
+        if element_index + 1 < len(kArrays[array_index]):
+            next_val = kArrays[array_index][element_index + 1]
+            heapq.heappush(min_heap, (next_val, array_index, element_index + 1))
+    
+    return result
