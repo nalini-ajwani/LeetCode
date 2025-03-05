@@ -7,6 +7,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/nalini-ajwani/LeetCode/tree/master/0021-merge-two-sorted-lists) |
+| [0061-rotate-list](https://github.com/nalini-ajwani/LeetCode/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/nalini-ajwani/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/nalini-ajwani/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 ## Recursion
@@ -21,6 +22,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0061-rotate-list](https://github.com/nalini-ajwani/LeetCode/tree/master/0061-rotate-list) |
 | [0141-linked-list-cycle](https://github.com/nalini-ajwani/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/nalini-ajwani/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 ## Array
