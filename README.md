@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0151-reverse-words-in-a-string](https://github.com/nalini-ajwani/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0160-intersection-of-two-linked-lists](https://github.com/nalini-ajwani/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0165-compare-version-numbers](https://github.com/nalini-ajwani/LeetCode/tree/master/0165-compare-version-numbers) |
+| [0680-valid-palindrome-ii](https://github.com/nalini-ajwani/LeetCode/tree/master/0680-valid-palindrome-ii) |
 ## Array
 |  |
 | ------- |
@@ -40,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0151-reverse-words-in-a-string](https://github.com/nalini-ajwani/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0165-compare-version-numbers](https://github.com/nalini-ajwani/LeetCode/tree/master/0165-compare-version-numbers) |
 | [0242-valid-anagram](https://github.com/nalini-ajwani/LeetCode/tree/master/0242-valid-anagram) |
+| [0680-valid-palindrome-ii](https://github.com/nalini-ajwani/LeetCode/tree/master/0680-valid-palindrome-ii) |
 ## String Matching
 |  |
 | ------- |
@@ -48,4 +50,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0242-valid-anagram](https://github.com/nalini-ajwani/LeetCode/tree/master/0242-valid-anagram) |
+## Greedy
+|  |
+| ------- |
+| [0680-valid-palindrome-ii](https://github.com/nalini-ajwani/LeetCode/tree/master/0680-valid-palindrome-ii) |
 <!---LeetCode Topics End-->
