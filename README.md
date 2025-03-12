@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0022-generate-parentheses](https://github.com/nalini-ajwani/LeetCode/tree/master/0022-generate-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/nalini-ajwani/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0049-group-anagrams](https://github.com/nalini-ajwani/LeetCode/tree/master/0049-group-anagrams) |
+| [0071-simplify-path](https://github.com/nalini-ajwani/LeetCode/tree/master/0071-simplify-path) |
 | [0151-reverse-words-in-a-string](https://github.com/nalini-ajwani/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0165-compare-version-numbers](https://github.com/nalini-ajwani/LeetCode/tree/master/0165-compare-version-numbers) |
 | [0242-valid-anagram](https://github.com/nalini-ajwani/LeetCode/tree/master/0242-valid-anagram) |
@@ -67,4 +68,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/nalini-ajwani/LeetCode/tree/master/0022-generate-parentheses) |
+## Stack
+|  |
+| ------- |
+| [0071-simplify-path](https://github.com/nalini-ajwani/LeetCode/tree/master/0071-simplify-path) |
 <!---LeetCode Topics End-->
