@@ -39,6 +39,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0485-max-consecutive-ones](https://github.com/nalini-ajwani/LeetCode/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/nalini-ajwani/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/nalini-ajwani/LeetCode/tree/master/0739-daily-temperatures) |
+| [0943-sum-of-subarray-minimums](https://github.com/nalini-ajwani/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 ## String
 |  |
 | ------- |
@@ -67,6 +68,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/nalini-ajwani/LeetCode/tree/master/0022-generate-parentheses) |
+| [0943-sum-of-subarray-minimums](https://github.com/nalini-ajwani/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 ## Backtracking
 |  |
 | ------- |
@@ -78,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0225-implement-stack-using-queues](https://github.com/nalini-ajwani/LeetCode/tree/master/0225-implement-stack-using-queues) |
 | [0496-next-greater-element-i](https://github.com/nalini-ajwani/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/nalini-ajwani/LeetCode/tree/master/0739-daily-temperatures) |
+| [0943-sum-of-subarray-minimums](https://github.com/nalini-ajwani/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 ## Design
 |  |
 | ------- |
@@ -91,4 +94,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0496-next-greater-element-i](https://github.com/nalini-ajwani/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/nalini-ajwani/LeetCode/tree/master/0739-daily-temperatures) |
+| [0943-sum-of-subarray-minimums](https://github.com/nalini-ajwani/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
 <!---LeetCode Topics End-->
