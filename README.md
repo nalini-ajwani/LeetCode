@@ -52,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0165-compare-version-numbers](https://github.com/nalini-ajwani/LeetCode/tree/master/0165-compare-version-numbers) |
 | [0242-valid-anagram](https://github.com/nalini-ajwani/LeetCode/tree/master/0242-valid-anagram) |
 | [0680-valid-palindrome-ii](https://github.com/nalini-ajwani/LeetCode/tree/master/0680-valid-palindrome-ii) |
+| [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/nalini-ajwani/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 ## String Matching
 |  |
 | ------- |
@@ -83,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0496-next-greater-element-i](https://github.com/nalini-ajwani/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/nalini-ajwani/LeetCode/tree/master/0739-daily-temperatures) |
 | [0943-sum-of-subarray-minimums](https://github.com/nalini-ajwani/LeetCode/tree/master/0943-sum-of-subarray-minimums) |
+| [1320-remove-all-adjacent-duplicates-in-string-ii](https://github.com/nalini-ajwani/LeetCode/tree/master/1320-remove-all-adjacent-duplicates-in-string-ii) |
 ## Design
 |  |
 | ------- |
